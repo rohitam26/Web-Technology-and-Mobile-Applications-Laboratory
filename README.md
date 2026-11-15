@@ -242,11 +242,7 @@ The repository contains the exported layout XML, Kotlin source, themes, and mani
 ### Experiment 8: Android Font & Color Customizer Application (Emulator Execution)
 ![Android Font Color UI](docs/images/exp8_android_font_color_ui.png)
 
-### Capstone Project: Online Insurance Management Platform (Hero Asset)
-![Insurance Platform Hero](docs/images/insurance_platform_hero.png)
 
-### Experiment 1: Chennai Insurance Centers Geographic Portal Map
-![Chennai Map](docs/images/exp1_chennai_portal_map.jpg)
 
 ---
 
