@@ -1,0 +1,59 @@
+function validateForm() {
+
+    let valid = true;
+
+    let fname = document.getElementById("fname").value.trim();
+    let lname = document.getElementById("lname").value.trim();
+    let password = document.getElementById("password").value;
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let address = document.getElementById("address").value.trim();
+
+    let namePattern = /^[A-Za-z]+$/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let mobilePattern = /^[0-9]{10}$/;
+
+    // First Name
+    if (!namePattern.test(fname) || fname.length < 6) {
+        document.getElementById("fnameErr").innerHTML =
+            "First Name must contain only alphabets and minimum 6 characters";
+        valid = false;
+    } else document.getElementById("fnameErr").innerHTML = "";
+
+    // Last Name
+    if (lname === "") {
+        document.getElementById("lnameErr").innerHTML =
+            "Last Name cannot be empty";
+        valid = false;
+    } else document.getElementById("lnameErr").innerHTML = "";
+
+    // Password
+    if (password.length < 6) {
+        document.getElementById("passErr").innerHTML =
+            "Password must be at least 6 characters";
+        valid = false;
+    } else document.getElementById("passErr").innerHTML = "";
+
+    // Email
+    if (!emailPattern.test(email)) {
+        document.getElementById("emailErr").innerHTML =
+            "Invalid Email format (example: name@domain.com)";
+        valid = false;
+    } else document.getElementById("emailErr").innerHTML = "";
+
+    // Mobile
+    if (!mobilePattern.test(mobile)) {
+        document.getElementById("mobileErr").innerHTML =
+            "Mobile Number must contain exactly 10 digits";
+        valid = false;
+    } else document.getElementById("mobileErr").innerHTML = "";
+
+    // Address
+    if (address === "") {
+        document.getElementById("addrErr").innerHTML =
+            "Address cannot be empty";
+        valid = false;
+    } else document.getElementById("addrErr").innerHTML = "";
+
+    return valid;
+}

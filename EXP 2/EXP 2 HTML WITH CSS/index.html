@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Insurance Booking</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1>SecureLife Insurance</h1>
+    <p class="tagline">“Covering Your Tomorrow, Today.”</p>
+
+    <form onsubmit="return validateForm();">
+
+        <input type="text" id="fname" placeholder="First Name">
+        <span id="fnameErr"></span>
+
+        <input type="text" id="lname" placeholder="Last Name">
+        <span id="lnameErr"></span>
+
+        <input type="password" id="password" placeholder="Password">
+        <span id="passErr"></span>
+
+        <input type="text" id="email" placeholder="Email Address">
+        <span id="emailErr"></span>
+
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <span id="mobileErr"></span>
+
+        <textarea id="address" placeholder="Residential Address"></textarea>
+        <span id="addrErr"></span>
+
+        <button type="submit">Book Insurance</button>
+
+    </form>
+</div>
+
+<footer>
+    ©Designed by <b>rohita</b>
+</footer>
+
+</body>
+</html>
