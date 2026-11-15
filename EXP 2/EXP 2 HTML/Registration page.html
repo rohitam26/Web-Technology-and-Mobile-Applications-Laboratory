@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Insurance Booking</title>
+
+    <script>
+        function validateForm() {
+
+            var fname = document.form1.fname.value.trim();
+            var lname = document.form1.lname.value.trim();
+            var password = document.form1.password.value;
+            var email = document.form1.email.value.trim();
+            var mobile = document.form1.mobile.value.trim();
+            var address = document.form1.address.value.trim();
+
+            var namePattern = /^[A-Za-z]+$/;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var mobilePattern = /^[0-9]{10}$/;
+
+            // First Name
+            if (!namePattern.test(fname) || fname.length < 6) {
+                alert("First Name must contain only alphabets and minimum 6 characters");
+                return false;
+            }
+
+            // Last Name
+            if (lname === "") {
+                alert("Last Name cannot be empty");
+                return false;
+            }
+
+            // Password
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            // Email
+            if (!emailPattern.test(email)) {
+                alert("Invalid Email format (example: name@domain.com)");
+                return false;
+            }
+
+            // Mobile Number
+            if (!mobilePattern.test(mobile)) {
+                alert("Mobile Number must contain exactly 10 digits");
+                return false;
+            }
+
+            // Address
+            if (address === "") {
+                alert("Address cannot be empty");
+                return false;
+            }
+
+            alert("Insurance Booking Submitted Successfully!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+<center>
+    <h1>SecureLife Insurance</h1>
+    <p><i>“Covering Your Tomorrow, Today.”</i></p>
+    <hr width="60%">
+</center>
+
+<br>
+
+<form name="form1" onsubmit="return validateForm();">
+
+<table align="center" cellpadding="10">
+
+<tr>
+    <td>First Name</td>
+    <td><input type="text" name="fname"></td>
+</tr>
+
+<tr>
+    <td>Last Name</td>
+    <td><input type="text" name="lname"></td>
+</tr>
+
+<tr>
+    <td>Password</td>
+    <td><input type="password" name="password"></td>
+</tr>
+
+<tr>
+    <td>Email Address</td>
+    <td><input type="text" name="email"></td>
+</tr>
+
+<tr>
+    <td>Mobile Number</td>
+    <td><input type="text" name="mobile"></td>
+</tr>
+
+<tr>
+    <td>Residential Address</td>
+    <td><textarea name="address" rows="4" cols="20"></textarea></td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Book Insurance">
+        &nbsp;&nbsp;
+        <input type="reset" value="Clear">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+<br><br>
+
+<p align="right">
+    ©Designed by <b>rohita</b>
+</p>
+
+</body>
+</html>

@@ -86,7 +86,7 @@ A modern client-side Single Page Application (SPA) prototype for an **Online Ins
 ```text
 WEB-TECHNOLOGY-AND-MOBILE-APPLICATIONS/
 │
-├── Web Page (EXP 1)/                       # Experiment 1: Multi-Page Web Portal (Chennai Insurance Centers)
+├── EXP 1/                                  # Experiment 1: Multi-Page Web Portal (Chennai Insurance Centers)
 │   ├── Web Page (without css)/             # Part A: Pure HTML table/frame-based portal
 │   │   ├── index.html
 │   │   └── tamilnadu.jpg
@@ -96,7 +96,7 @@ WEB-TECHNOLOGY-AND-MOBILE-APPLICATIONS/
 │       ├── about.html, central.html, east.html, north.html, south.html, west.html...
 │       └── car.jpg, health.jpg, life.jpg, chennai.jpg, Chennai.jpeg
 │
-├── Registration Page(EXP 2 )/              # Experiment 2: Registration Form with Client-Side Validation
+├── EXP 2/                                  # Experiment 2: Registration Form with Client-Side Validation
 │   ├── EXP 2 HTML/                         # Part A: Pure HTML registration form
 │   │   └── Registration page.html
 │   └── EXP 2 HTML WITH CSS/                # Part B: Form with CSS styling & JavaScript validation
@@ -104,10 +104,10 @@ WEB-TECHNOLOGY-AND-MOBILE-APPLICATIONS/
 │       ├── style.css
 │       └── script.js.txt
 │
-├── Servlet Program(EXP 3)/                 # Experiment 3: HelloWorld Java Servlet
+├── EXP 3/                                  # Experiment 3: HelloWorld Java Servlet
 │   └── EXP 3.pdf                           # Documented HttpServlet code, web.xml mapping & Tomcat output
 │
-├── Login Form (EXP 4)/                     # Experiment 4: User Login Form and UserServlet
+├── EXP 4/                                  # Experiment 4: User Login Form and UserServlet
 │   └── EXP 4.pdf                           # Documented HTML login form and POST handling servlet
 │
 ├── EXP 5/                                  # Experiment 5: HTTP GET vs. POST Request Handling
@@ -168,8 +168,8 @@ WEB-TECHNOLOGY-AND-MOBILE-APPLICATIONS/
 Open the HTML files directly in your web browser:
 ```bash
 # On Windows PowerShell:
-Start-Process "Web Page (EXP 1)\Web Page (with css)\index.html"
-Start-Process "Registration Page(EXP 2 )\EXP 2 HTML WITH CSS\index.html"
+Start-Process "EXP 1\Web Page (with css)\index.html"
+Start-Process "EXP 2\EXP 2 HTML WITH CSS\index.html"
 ```
 
 ### 2. Compiling and Deploying Java Servlets (Experiments 3–6)
@@ -211,10 +211,10 @@ The repository contains the exported layout XML, Kotlin source, themes, and mani
 
 | Exp No. / Project | Module Title | Primary Files / Directory | Core Concepts & Features | Technology Stack | Key Output / Verification |
 |:---:|---|---|---|---|---|
-| **01** | Multi-Page Web Portal | [Web Page (EXP 1)](Web%20Page%20%28EXP%201%29/Web%20Page%20%28with%20css%29/index.html) | Multi-page site navigation, zonal center directory, CSS layouts | HTML5, CSS3 | Centered Chennai insurance center portal |
-| **02** | Registration Page & Validation | [Registration Page(EXP 2 )](Registration%20Page%28EXP%202%20%29/EXP%202%20HTML%20WITH%20CSS/index.html) | Client-side validation for email, password match, mobile length, age | HTML5, CSS3, JavaScript | Interactive validation alerts and feedback |
-| **03** | HelloWorld Servlet | [Servlet Program(EXP 3)](Servlet%20Program%28EXP%203%29/EXP%203.pdf) | `HttpServlet`, `doGet()`, `PrintWriter`, URL mapping (`/HelloWorld`) | Java Servlet, Tomcat | Browser output: "Hello World from Servlet" |
-| **04** | User Login Form | [Login Form (EXP 4)](Login%20Form%20%28EXP%204%29/EXP%204.pdf) | HTML form submission, `doPost()`, request parameter extraction | HTML, Java Servlet | Processed login credentials display |
+| **01** | Multi-Page Web Portal | [EXP 1](EXP%201/Web%20Page%20%28with%20css%29/index.html) | Multi-page site navigation, zonal center directory, CSS layouts | HTML5, CSS3 | Centered Chennai insurance center portal |
+| **02** | Registration Page & Validation | [EXP 2](EXP%202/EXP%202%20HTML%20WITH%20CSS/index.html) | Client-side validation for email, password match, mobile length, age | HTML5, CSS3, JavaScript | Interactive validation alerts and feedback |
+| **03** | HelloWorld Servlet | [EXP 3](EXP%203/EXP%203.pdf) | `HttpServlet`, `doGet()`, `PrintWriter`, URL mapping (`/HelloWorld`) | Java Servlet, Tomcat | Browser output: "Hello World from Servlet" |
+| **04** | User Login Form | [EXP 4](EXP%204/EXP%204.pdf) | HTML form submission, `doPost()`, request parameter extraction | HTML, Java Servlet | Processed login credentials display |
 | **05** | HTTP GET vs. POST Demonstration | [EXP 5](EXP%205/EXP%205.pdf) | Query string parameters vs. HTTP request body payload handling | HTML, Java Servlet | Parameter comparison in server response |
 | **06** | Standalone GET/POST Servlet | [EXP 6](EXP%206/GetPostServlet.java) | Dual-method handling in a single servlet (`doGet` & `doPost`) | Java Servlet, HTML | Standalone servlet processing form data |
 | **07** | Android Calculator Application | [EXP 7](EXP%207/activity_main.xml%28res-_layout-_activity_main%29_) | Grid UI layout, Button widgets, arithmetic operations | Android XML, Themes | Verified Android emulator calculator UI |
